@@ -63,7 +63,7 @@ class NetworkManager: NSObject {
                           
                             switch response.result
                             {
-                            case .success():
+                            case .success:
                                     if let unwrappedValue = response.result.value
                                     {
                                         debugPrint("unwrappedValue: \(unwrappedValue)")
@@ -72,8 +72,8 @@ class NetworkManager: NSObject {
                                     {
                                         debugPrint(response)
                                     }
-                            case .failure():
-                                debugPrint(error)
+                            case .failure:
+                                print("hehehe")
                             }
         }
     }
