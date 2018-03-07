@@ -24,6 +24,19 @@ class NetworkManager: NSObject {
         
         // Configuration
         // ...
+        // MARK: - Adding headers to all requests in the session
+        // get the default headers
+        var headers = Alamofire.SessionManager.defaultHTTPHeaders
+        // add your custom header
+        headers["Content-Type"] = "application/json"
+        
+        // create a custom session configuration
+        let configuration = URLSessionConfiguration.default
+        // add the headers
+        configuration.httpAdditionalHeaders = headers
+        
+        // create a session manager with the configuration
+        let sessionManager = Alamofire.SessionManager(configuration: configuration)
         
         return networkManager
     }()
