@@ -1,0 +1,17 @@
+## Build generated
+Build/
+DerivedData/
+
+## Various settings
+*.pbxuser
+xcuserdata/
+
+## Obj-C/Swift specific
+*.ipa
+*.zip
+
+Pods/
+Podfile.lock
+
+# ignore mac ds files
+.DS_Store
