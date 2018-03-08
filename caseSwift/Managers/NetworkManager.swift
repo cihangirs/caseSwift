@@ -12,6 +12,12 @@ import Alamofire
 class NetworkManager: NSObject {
     
     // MARK: - Properties
+//    let m, n: Double
+    let m2 = 1_000.0, n2 = 0.0
+    let http404Error = (statusCode: 404, statusMessage: "Not Found")
+//    var red, green, blue: Double
+    var red2 = 0.0, green2 = 0.0, blue2 = 0.0
+    var someValue : Int? = 404
 
     enum API
     {
